@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<!--{% load static %}-->
-
 <html lang="en">
-
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rashail Tech Labs Pvt. Ltd.</title>
+    <title>Easy.Control Home Automation web application</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,23 +13,36 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">Rashail Tech Labs <span class="accent">Pvt. Ltd.</span></div>
-            <!--<div class="login-btn">log in</div.-->
-        </div>
-    </header>
-    <div>
+    <div class="overlay">
+
+        <form class="login-form" action="">
+            <label>Email id</label>
+            <br>
+            <input id="email" type="email" placeholder="Enter your email here">
+
+            <label>Password</label>
+            <br>
+            <input id="password" type="password" placeholder="Enter password here">
+
+            <button class="login">Log in</button>
+
+            <p class="close-btn">Close</p>
 
     </div>
+    <header>
+        <div class="container">
+            <div class="logo">easy.<span class="accent">control</span></div>
+            <div class="login-btn">log in</div>
+        </div>
+    </header>
     <main>
         <div class="container">
             <div class="your-device">
-                <h2>Clinic 1</h2>
+                <h2>your devices</h2>
                 <hr>
                 <div class="devices"></div>
             </div>
-            <!--<div class="add-device">
+            <div class="add-device">
                 <h2>add devices</h2>
                 <hr>
                 <form action="">
@@ -45,26 +56,22 @@
 
                     <label>MAC Address of Device</label>
                     <br>
-                    <input id="device" type="text" placeholder="Enter MAC Address of Device">
+                    <input id="device-mac" type="text" placeholder="Enter MAC Address of Device">
 
-                    <label>Something</label>
-                    <br>
-                    <input type="text" placeholder="Enter Something here">
-
-                    <button>Add Device</button>
+                    <button class="add-device-btn">Add Device</button>
 
 
                 </form>
             </div>
-        </div>-->
+        </div>
     </main>
     <footer>
         <div class="container">
-            <p>This Website is Designed and Developed by: <b>Rashail Tech Lab Pvt. Ltd.</b></p>
+            <p>This project is build by: Ashutosh Raghuwanshi, Avani Shrivastava, Devendra Patidar</p>
         </div>
     </footer>
     <script>
- const devices = document.querySelector('.devices')
+        const devices = document.querySelector('.devices')
 let deviceList = []
 
 // rendering function which renders the data of API on display
