@@ -238,6 +238,7 @@ button {
     height: calc(100vh - 200px);
     background-color: #E5F0FF;
     border-radius: 16px;
+     display: none;
 }
 
 footer {
