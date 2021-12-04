@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rashail Techlabs Pvt. Ltd.</title>
+    <title>Rashail Tech Lab</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    
+   
     <header>
         <div class="container">
-            <div class="logo">Rashail <span class="accent">Tech Labs</span></div>
-            
+            <div class="logo">Rashail <span class="accent">Tech Lab</span></div>
+            <div class="login-btn">log in</div>
         </div>
     </header>
     <main>
@@ -27,12 +27,32 @@
                 <hr>
                 <div class="devices"></div>
             </div>
+            <div class="add-device">
+                <h2>add devices</h2>
+                <hr>
+                <form action="">
+                    <label>Device</label>
+                    <br>
+                    <input id="device-name" type="text" placeholder="Enter your device here">
 
+                    <label>Room</label>
+                    <br>
+                    <input id="device-room" type="text" placeholder="Enter the room here">
+
+                    <label>MAC Address of Device</label>
+                    <br>
+                    <input id="device-mac" type="text" placeholder="Enter MAC Address of Device">
+
+                    <button class="add-device-btn">Add Device</button>
+
+
+                </form>
+            </div>
         </div>
     </main>
     <footer>
         <div class="container">
-            <p>Designed and Developed by Rashail Tech lab Pvt. ltd.</p>
+            <p>Designed and Developed by Rashail Tech Lab Pvt. Ltd.</p>
         </div>
     </footer>
     <script>
@@ -129,7 +149,6 @@ setInterval(() => {
 
 
 
-// login form
 
     </script>
 </body>
