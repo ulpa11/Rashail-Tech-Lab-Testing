@@ -13,26 +13,11 @@
 </head>
 
 <body>
-    <div class="overlay">
 
-        <form class="login-form" action="">
-            <label>Email id</label>
-            <br>
-            <input id="email" type="email" placeholder="Enter your email here">
-
-            <label>Password</label>
-            <br>
-            <input id="password" type="password" placeholder="Enter password here">
-
-            <button class="login">Log in</button>
-
-            <p class="close-btn">Close</p>
-
-    </div>
     <header>
         <div class="container">
             <div class="logo">easy.<span class="accent">control</span></div>
-            <div class="login-btn">log in</div>
+            
         </div>
     </header>
     <main>
@@ -166,16 +151,7 @@ setInterval(() => {
 
 // login form
 
-const loginBtn = document.querySelector('.login-btn')
-const overlay = document.querySelector('.overlay')
-loginBtn.addEventListener('click', function() {
-    overlay.style.display = "flex"
-})
 
-const closeBtn = document.querySelector('.close-btn')
-closeBtn.addEventListener('click', function() {
-    overlay.style.display = "none"
-})
     </script>
 </body>
 
