@@ -7,6 +7,7 @@ class DeviceStatus(models.Model):
     device_name=models.CharField(max_length=200)
     device_room=models.CharField(max_length=200)
     device_status=models.IntegerField()
+    device_no=models.IntegerField()
     def __str__(self):
         return self.device_name
 class Testing(models.Model):
